@@ -6,34 +6,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <title>About Us</title>
-	<link rel="icon" href="../images/FullColor_IconOnly_1024x1024_72dpi.jpg" type="image/gif">
+	<link rel="icon" href="../images//FullColor_IconOnly_1024x1024_72dpi-transparent.png" type="image/gif">
 	<script src="https://use.typekit.net/kxf0iwn.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-<link href="../style.css" rel="stylesheet" type="text/css">
+<link href="../styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<!--Navigation menu-->
-   <header>
-      <a class="site-logo">
-          <img class="logo" src="../images/FullColor_TransparentBg_1024x1024_72dpi.png">
-      </a>
-        <nav class="site-nav">
+    <header>
+        <a class="site-logo">
+          <img class="logo" src="/logo_assets/Standard Pack/website_logo_transparent_background.png">
+        </a>
+        <div class="topnav" id="myTopnav">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <a class="first" href="/index.html">Home</a>
+                <a class="second" href="/pages/about.html">About</a>
+                <a class="third" href="/gallery.html">Gallery</a>
+                <a class="fourth" href="/pages/Contact.html">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </ul>
-        </nav>
+        </div>
     </header>
 	
-	<!--main section-->
-	<section class="topper">
-		<div class="topper-content">
-			<h1>About us</h1>
-		</div>
-	</section>
+    <!--main section-->
+    <main>
+        <section class="topper">
+            <div class="topper-content">
+                <h1 class="about-title">About us</h1>
+            </div>
+        </section>
+        <section class="about-text-container">
+            <div class="about-img">
+                <figure>
+                    <img src="/logo_assets/Standard Pack/FullColor_TextOnly_Transparent_background_croped.png" alt="">
+                </figure>
+            </div>
+            <div class="about-text">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, soluta odit. Tempore exercitationem voluptas labore ullam ab sed ratione! Deleniti, nulla? Ut blanditiis illum aut quae maxime neque modi animi.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione architecto reprehenderit qui beatae facere nemo cupiditate quo incidunt explicabo sint, nobis esse voluptates exercitationem, ad at numquam quisquam omnis tenetur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ab autem eveniet fugit magnam provident aspernatur nobis fuga, reiciendis ducimus voluptatum officiis veritatis dolores error, earum totam illo vitae repellendus.</p>
+            </div>
+        </section>
+        <section class="get-to-know-us-container">
+            <div class="get-to-know-us">
+                <h2 class="get-to-know-us-text">Get to know us</p>
+                    <div class="grid">
+                        <figure>
+                            <img src="/images/remodeling/iCloud Photos from Alix Dominguez/grey-kitchen-streighten-square.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="/images/remodeling/iCloud Photos from Alix Dominguez/bathroom-streighten-square.png" alt="">
+                        </figure>
+                    </div>
+                <a class="see-more" href="gallery.html">See our work</a>
+            </div>
+        </section>
+    </main>
+    <footer  class="footer">
+        <div class="footer-right">
+            <h2 class="footer-company-about-title">About Redo RX</h2>
+            <p class="footer-company-about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quasi labore minima voluptatem, deleniti quaerat doloribus fugit ratione nam accusamus repudiandae adipisci saepe sapiente expedita alias.</p>
+        </div>
+        <div class="footer-left">
+            <div>
+                <img src="/logo_assets/Standard Pack/website_logo_solid_background.png">
+            </div> 
+            <div class="contact-us">
+                <h2 class="footer-company-about-title">Contact Us</h2>
+                <p>(555) 555-5555</p>
+                <p><a class="email" href="mailto:adrian's-work-email@email.com">adrian's-work-email@email.com</a></p>
+            </div>
+        </div>     
+        <div class="footer-bottom">
+            <div>
+                <p class="footer-links">
+                    <a href="#">Home |</a>
+                    <a href="#">About |</a>
+                    <a href="#">Gallery |</a>
+                    <a href="#">Contact</a>
+                </p>
+                <p class="footer-company-name">© 2019 Redo Rx</p>
+            </div>
+        </div>
+	</footer>
 		
 </body>
 </html>
