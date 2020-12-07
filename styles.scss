@@ -82,31 +82,6 @@ h3 {
     text-transform: uppercase;
     text-shadow: 0px 0px 8px rgba(0, 0, 0,.2);
 }
-
-// .wrapper {
-//     display: block;
-//     float: right;
-//     .site-nav {
-//         display: block;
-//         min-height: 8vh;
-//         background-color: burlywood;
-//         ul {
-//             margin: 10px;
-//             li {
-//                 list-style: none;
-//                 position: relative;
-//                 a {
-//                     font-family: sans-serif;
-//                     color: #000000;
-//                     font-size: 5px;
-//                     text-decoration: none;
-//                     line-height: 30px;
-//                 }
-//             }
-//         }
-//     }
-// }
-
 .hero {
     position: relative;
     height: 60vw;
@@ -146,12 +121,12 @@ h3 {
     }
 }   
 .artworks {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    // position: relative;
+    // width: 100%;
+    // overflow: hidden;
     .artwork {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
         .artwork-piece {
             figure {
                 display: flex;
@@ -210,16 +185,16 @@ h3 {
                     width: 100%;
                     height: 100%;
                     position: relative;
-                     z-index: 100;
+                    z-index: 100;
                 }
             }
         }
         .artwork-description2 {
-            background: #15301b;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background: #15301b;
             color: white;
             padding: 30px;
             .artwork-title {
@@ -255,7 +230,6 @@ h3 {
 }
 .footer {
     padding: 50px 50px 20px 50px;
- 
     .footer-left {
         display: flex;
         justify-content: center;
@@ -551,276 +525,296 @@ color: white;
 	}
 }
 @media (min-width: 1024px){
-    // h2{
-    //     font-size: 2em;
-    //     padding-top: 13%;
+    .intro {
+          padding: 12.5em 6em 14.5em;
+          .intro-text {
+            position: relative;
+            p {
+                font-size: 2.5em; 
+            }
+          }
+        }
+    }     
+    .artworks {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        .artwork {
+            display: flex;
+            .artwork-piece {
+                width: 50%;
+                figure {
+                    position: relative;
+                    img {
+                        position: relative;
+                        z-index: 100;
+                        float: left;
+                    }
+                }
+            }
+            .artwork-description {
+                flex: 1;
+                width: 50%;
+                padding: 11.25em 13em 11.5em;
+                .artwork-title {
+                    font-family: 'acumin-pro-extra-condensed', sans-serif;
+                    font-size: 3em;
+                    font-weight: 100;
+                    padding: 2em 0 0 0;
+                    letter-spacing: .36em;
+                    text-transform: uppercase;
+                    line-height: 1.5;
+                    max-width: 9em;
+                    margin-bottom: .5em;
+                }
+                .artwork-text {
+                    font-size: 1.1em;
+                    line-height: 1.9;
+                    opacity: .8;
+                    max-width: 20em;
+                }
+            } 
+        }
+    }
+    .artworks2 {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        .artwork2 {
+            display: flex;
+            .artwork-description2 {
+                width: 50%;
+                padding: 11.25em 13em 11.5em;
+            }
+            .artwork-piece2 {
+                width: 50%;
+                figure {
+                    position: relative;
+                    img {
+                        position: relative;
+                        z-index: 100;
+                    }
+                }
+              }
 
-    // }
-    // h3 {
-    //     font-size: 1.5em;
-    // }
-    // img {
-    //     width: 100%;
-    //     max-width: 100%;
-    //     height: auto;
-    //     vertical-align: middle;
-    //     -webkit-transform: translate3d(0,0,0);
-    //             transform: translate3d(0,0,0);
-    // }
-    // .artworks {
-    //     position: relative;
-    //     width: 100%;
-    //     overflow: hidden;
-    //     .artwork {
-    //         display: flex;
-    //         .artwork-piece {
-    //             padding: 8% 0 8% 23.5%;
-    //             background-image:-moz-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-    //             background-image: -webkit-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-    //             background-image: -ms-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-    //             width: 50%;
-    //             figure {
-    //                 position: relative;
-    //                 img {
-    //                     position: relative;
-    //                     z-index: 100;
-    //                     float: left;
-    //                 }
-    //             }
-    //         }
-    //         .artwork-description {
-    //             background: #26223e;
-    //             color: #fff;
-    //             width: 50%;
-    //             padding: 11.25em 13em 11.5em;
-    //                 .artwork-title {
-    //                     font-family: 'acumin-pro-extra-condensed', sans-serif;
-    //                     font-size: 3em;
-    //                     font-weight: 100;
-    //                     padding: 2em 0 0 0;
-    //                     letter-spacing: .36em;
-    //                     text-transform: uppercase;
-    //                     line-height: 1.5;
-    //                     max-width: 9em;
-    //                     margin-bottom: .5em;
-    //                 }
-    //                 .artwork-text {
-    //                     font-size: 1.1em;
-    //                     line-height: 1.9;
-    //                     opacity: .8;
-    //                     max-width: 20em;
-    //                 }
-    //                 .see-more {
-    //                     font-size: 1em;
-    //                     display: inline-block;
-    //                     margin-top: 4.1em;
-    //                     padding: 0 0 .4em 0;
-    //                     transition: all .3s;
-    //                     text-decoration: none;
-    //                 }
-    //                 .see-more:hover {
-    //                     border-bottom: 1px solid white;
-    //                 }
-    //         }
-    //     }
-    // }
+        }
+        
+    }
 
-html,
-html * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: arial, sans-serif;
-  font-size: 1vw;
-  background: white;
-}
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  -webkit-transform: translate3d(0,0,0);
-          transform: translate3d(0,0,0);
-}
+        
 
-.hero {
-  position: relative;
-  height: 54vw;
-  background-image: url("images/solid-kitchen-remodel.jpeg");
-  background-size: cover;
-}
-.topper {
-  background-color: limegreen;
-  position: relative;
-  height: 44vw;
-}
-.topper-content {
-  font-family: 'acumin-pro-extra-condensed', sans-serif;
-  color: #fff;
-  position: absolute;
-  z-index: 20000;
-  padding-top: 20em;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-.hero-content {
-  font-family: 'acumin-pro-extra-condensed', sans-serif;
-  color: #fff;
-  position: absolute;
-  z-index: 20000;
-  padding-top: 4em;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
+        
+        
 
-h2 {
-	font-weight: 100;
-	font-size: 2em;
-    line-height: 2.2;
-	margin-bottom: -.35em;
-	padding-top: 13%;
-	letter-spacing: .3em;
-	text-transform: uppercase;
-	text-shadow: 0px 0px 8px rgba(0, 0, 0,.2);
-}
-h1 {
-  margin-bottom: 1.5%;
-  text-transform: uppercase;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0,.05);
-  letter-spacing: .80em;
-  margin-left: .7em;
-  font-size: 8vw;
+// html,
+// html * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// body {
+//   font-family: arial, sans-serif;
+//   font-size: 1vw;
+//   background: white;
+// }
+// img {
+//   width: 100%;
+//   max-width: 100%;
+//   height: auto;
+//   vertical-align: middle;
+//   -webkit-transform: translate3d(0,0,0);
+//           transform: translate3d(0,0,0);
+// }
+
+// .topper {
+//   background-color: limegreen;
+//   position: relative;
+//   height: 44vw;
+// }
+// .topper-content {
+//   font-family: 'acumin-pro-extra-condensed', sans-serif;
+//   color: #fff;
+//   position: absolute;
+//   z-index: 20000;
+//   padding-top: 20em;
+//   top: 0;
+//   bottom: 0;
+//   width: 100%;
+//   text-align: center;
+// }
+// .hero-content {
+//   font-family: 'acumin-pro-extra-condensed', sans-serif;
+//   color: #fff;
+//   position: absolute;
+//   z-index: 20000;
+//   padding-top: 4em;
+//   top: 0;
+//   bottom: 0;
+//   width: 100%;
+//   text-align: center;
+// }
+
+// h2 {
+// 	font-weight: 100;
+// 	font-size: 2em;
+//     line-height: 2.2;
+// 	margin-bottom: -.35em;
+// 	padding-top: 13%;
+// 	letter-spacing: .3em;
+// 	text-transform: uppercase;
+// 	text-shadow: 0px 0px 8px rgba(0, 0, 0,.2);
+// }
+// h1 {
+//   margin-bottom: 1.5%;
+//   text-transform: uppercase;
+//   text-shadow: 0px 0px 10px rgba(0, 0, 0,.05);
+//   letter-spacing: .80em;
+//   margin-left: .7em;
+//   font-size: 8vw;
 	
-}
-h3 {
-    font-size: 1.5em;
-    font-weight: 100;
-    line-height: 2.75;
-    letter-spacing: .35em;
-    text-transform: uppercase;
-    text-shadow: 0px 0px 8px rgba(0, 0, 0,.2);
-}
-.intro {
-  position: relative;
-  color: #343144;
-  background: #fff;
-  padding: 12.5em 6em 14.5em;
-}
-.intro-text {
-  position: relative;
-}
-.intro p {
-  font-family: 'acumin-pro-extra-condensed', sans-serif;
-  font-size: 2.5em;
-  line-height: 1.8;
-  position: relative;
-  z-index: 200;
-  text-align: center;
-  letter-spacing: .325em;
-  text-transform: uppercase;
-}
-.artworks {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.artwork {
-  display: flex;
-}
-.artwork .artwork-piece {
-  padding: 8% 0 8% 23.5%;
-  background-image:-moz-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-  background-image: -webkit-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-  background-image: -ms-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-  width: 50%;
-}
-.artwork-piece figure {
-  position: relative;
-}
-.artwork-piece figure img {
-  position: relative;
-  z-index: 100;
-  float: left;
-}
+// }
+// h3 {
+//     font-size: 1.5em;
+//     font-weight: 100;
+//     line-height: 2.75;
+//     letter-spacing: .35em;
+//     text-transform: uppercase;
+//     text-shadow: 0px 0px 8px rgba(0, 0, 0,.2);
+// }
+// .intro {
+//   position: relative;
+//   color: #343144;
+//   background: #fff;
+//   padding: 12.5em 6em 14.5em;
+// }
+// .intro-text {
+//   position: relative;
+// }
+// .intro p {
+//   font-family: 'acumin-pro-extra-condensed', sans-serif;
+//   font-size: 2.5em;
+//   line-height: 1.8;
+//   position: relative;
+//   z-index: 200;
+//   text-align: center;
+//   letter-spacing: .325em;
+//   text-transform: uppercase;
+// }
+// .artworks {
+//   position: relative;
+//   width: 100%;
+//   overflow: hidden;
+// }
+// .artwork {
+//   display: flex;
+// }
+// .artwork .artwork-piece {
+//   padding: 8% 0 8% 23.5%;
+//   background-image:-moz-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
+//   background-image: -webkit-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
+//   background-image: -ms-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
+//   width: 50%;
+// }
+// .artwork-piece figure {
+//   position: relative;
+// }
+// .artwork-piece figure img {
+//   position: relative;
+//   z-index: 100;
+//   float: left;
+// }
 
-.artwork .artwork-description {
-  background: #26223e;
-  color: #fff;
-  width: 50%;
-  padding: 11.25em 13em 11.5em;
-}
-.artwork-title {
-  font-family: 'acumin-pro-extra-condensed', sans-serif;
-  font-size: 3em;
-  font-weight: 100;
-  padding: 2em 0 0 0;
-  letter-spacing: .36em;
-  text-transform: uppercase;
-  line-height: 1.5;
-  max-width: 9em;
-  margin-bottom: .5em;
-}
-.artwork-text {
-  font-size: 1.1em;
-  line-height: 1.9;
-  opacity: .8;
-  max-width: 20em;
-}
+// .artwork .artwork-description {
+//   background: #26223e;
+//   color: #fff;
+//   width: 50%;
+//   padding: 11.25em 13em 11.5em;
+// }
+// .artwork-title {
+//   font-family: 'acumin-pro-extra-condensed', sans-serif;
+//   font-size: 3em;
+//   font-weight: 100;
+//   padding: 2em 0 0 0;
+//   letter-spacing: .36em;
+//   text-transform: uppercase;
+//   line-height: 1.5;
+//   max-width: 9em;
+//   margin-bottom: .5em;
+// }
+// .artwork-text {
+//   font-size: 1.1em;
+//   line-height: 1.9;
+//   opacity: .8;
+//   max-width: 20em;
+// }
 
-.artworks2 {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.artwork2 {
-	display: flex;
-}
-.artwork2 .artwork-description2 {
-  background: #15301b;
-  color: #fff;
-  width: 50%;
-  padding: 11.25em 13em 11.5em;
-}
-.ceiling-piece2 figure {
-  position: relative;
-}
-.ceiling-piece2 figure img {
-  position: relative;
-  z-index: 100;
-}
-.artworks2 .ceiling-piece2 {
-  padding: 8% 0 8% 23.5%;
-  background-image:-moz-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-  background-image: -webkit-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-  background-image: -ms-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
-  width: 50%;
-}
-.see-more {
-  font-size: 1em;
-  display: inline-block;
-  margin-top: 4.1em;
-  padding: 0 0 .4em 0;
-  transition: all .3s;
-  text-decoration: none;
-}
-.see-more:hover {
-  border-bottom: 1px solid white;
-}
-footer {
-  margin-top: -3.5em;
-  padding-top: 10em;
-  background-image:-moz-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
-  background-image: -webkit-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
-  background-image: -ms-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
-}
+// .artworks2 {
+//   position: relative;
+//   width: 100%;
+//   overflow: hidden;
+// }
+// .artwork2 {
+// 	display: flex;
+// }
+// .artwork2 .artwork-description2 {
+//   background: #15301b;
+//   color: #fff;
+//   width: 50%;
+//   padding: 11.25em 13em 11.5em;
+// }
+// .ceiling-piece2 figure {
+//   position: relative;
+// }
+// .ceiling-piece2 figure img {
+//   position: relative;
+//   z-index: 100;
+// }
+// .artworks2 .ceiling-piece2 {
+//   padding: 8% 0 8% 23.5%;
+//   background-image:-moz-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
+//   background-image: -webkit-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
+//   background-image: -ms-linear-gradient( 135deg, rgb(160,55,220) 0%, rgb(83,200,234) 100%);
+//   width: 50%;
+// }
+// footer {
+//   margin-top: -3.5em;
+//   padding-top: 10em;
+//   background-image:-moz-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+//   background-image: -webkit-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+//   background-image: -ms-linear-gradient( -45deg, rgb(255,91,127) 0%, rgb(255,213,86) 100%);
+// }
     .col-lg-one-fourth {
 		width: 25%;
 	}
+@media (max-width: 1316px) {
+    .artworks {
+        .artwork {
+            .artwork-piece {
+                background-image: url(/images/bathroomVanity.jpg);
+                background-size: cover;
+                figure {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1427px) {
+    .artworks2 {
+        .artwork2 {
+            .artwork-piece2 {
+                background-image: url(/images/fireplace-straighten.png);
+                background-size: cover;
+                figure {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
